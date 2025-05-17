@@ -1,0 +1,290 @@
+body {
+    background-color: #5a777a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    color: #d2fbff;
+}
+
+header {
+    padding: 2em 0;
+    text-align: center;
+    background-color: #61999f;
+}
+footer{
+    padding: .5em 0;
+}
+
+nav {
+    background-color: #61999f;
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: .5em;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 1em;
+    color: #d2fbff;
+    border-radius: 1em;
+    transition-duration: 500ms;
+}
+
+nav #ss{
+    background-color: #548186;
+    border-radius: .3em;
+}
+
+nav li a:hover {
+    background-color: #548186;
+    transition-duration: 500ms;
+}
+
+main {
+    margin: 1em 2em 1em 2em;
+    display: flex;
+    flex-direction: row;
+    min-height: 23em;
+}
+
+main section {
+    background-color: #548186;
+    flex: 7;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+#tablas {
+    justify-content: normal;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tablas form {
+    background-color: #fff;
+    border: 1px solid #8e8e8e;
+    padding: .5em;
+    color: #000;
+    border-radius: .3em;
+}
+tr:first-child{
+    background-color: #8e8e8e;
+}
+
+tr:nth-child(even) {
+    background-color: #b3b3b3;
+}
+
+.Md, .Br, #Cn, #FrmB1, #FrmB2{
+    padding: .5em;
+    margin: .1em;
+    border-radius: .3em;
+    color: #fff;
+    transition-duration: 200ms;
+}
+
+.Btin{
+    display: flex;
+    flex-direction: column;
+}
+
+.Md{
+    background-color: #777;
+    border: 1px solid #666;
+}
+
+.Br, #FrmB2{
+    background-color: #e00;
+    border: 1px solid #d00;
+}
+
+.Br:hover,.Md:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+#Cn, #FrmB1{
+    background-color: #0a0;
+    border: 1px solid #090;
+    transition-duration: 200ms;
+}
+
+#Cn:hover, #FrmB1:hover, #FrmB2:hover{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+
+main #error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main #Ix{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#frm {
+    color: #000;
+    background-color: #e9ffff;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1em;
+    min-width: 14em;
+    max-height: 10em;
+}
+
+#frmin input{
+    padding: .5em .2em;
+    font-size: 1em;
+}
+
+#frmin{
+    color: #000;
+    background-color: #e9ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1em;
+    border-radius: 1em;
+    min-width: 15em;
+}
+
+
+#frmin div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#frmin div input{
+    padding: .5em;
+    margin: .3em;
+}
+
+#Nm,
+#Pw {
+    padding: .5em;
+    border-radius: .2em;
+    border: .1em solid #000;
+}
+
+
+#En {
+    padding: .5em;
+    margin-top: 1em;
+    border-radius: .5em;
+    background-color: #b9ffff;
+    border: none;
+    transition: 200ms;
+}
+
+#En:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #5d7c7c;
+    transition-duration: 200ms;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#popup{
+    color: #000;
+}
+
+#popup button{
+    background-color: #8b8b8b;
+    padding: .4em;
+    border: none;
+    border-radius: 10%;
+    transition-duration: 300ms;
+}
+
+#popup button:hover{
+    background-color: #7f7f7f;
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+
+
+
+aside {
+    background-color: #61999f;
+    min-width: 15em;
+    padding-left: 1em;
+}
+
+aside .usuarios{
+    max-width: 4em;
+    border-radius: 50%;
+    box-shadow: #0000003d 0px 3px 8px;
+    border: 3px solid #43585b;
+    margin: 1em;
+    transition: 500ms;
+}
+
+aside .usuarios:hover{
+    transform: scale(1.3);
+    transition: 500ms;
+    box-shadow: #ffffff3d 0px 3px 8px;
+    border: 3px solid #86aeb4;
+}
+
+
+footer {
+    background-color: #61999f;
+    padding: 1em;
+}
+
+@media screen and (max-width: 1070px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #tablas form{
+        font-size: 13px;
+    }
+    .Btin input{
+        padding: .3em;
+    }
+}
+
+@media screen  and (max-width: 822px) {
+    #tablas form{
+        font-size: 11px;
+    }
+    .Btin input{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    #tablas form{
+        font-size: 9px;
+    }
+}
