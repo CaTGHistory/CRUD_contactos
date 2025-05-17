@@ -1,11 +1,10 @@
 # CRUD_contactos
 
 # Pasos de la instalaccion.
-1.- Descomprimir el archivo  con la extension.rar
-2.- Mover la carpeta principal a la carpeta destino de XAMPP
-3.- Crear una base de datos en el localhost de mysql con el nombre de agendausers
-4.- Inportar el archivo .sql a la base de datos creada previamente
-5.- Ejecutar el archivo por medio de un navegador.
+1.- Mover la carpeta AgendaPHPV2 a la carpeta htdocs de XAMPP\
+2.- Crear una base de datos en el localhost de mysql con el nombre de agendausers.\
+3.- Inportar el archivo agendausers.sql a la base de datos creada previamente.\
+4.- Ejecutar el archivo por medio de un navegador y del uso de la aplicacion XAMPP.\
 
 # Aplicación Agenda
 Haciendo uso del CRUD (Crear, Leer, Actualizar y Eliminar) se ha creado una aplicacion que permita a distintos tipos de usuarios visualizar, modifica, agregar y eliminar contactos a una base de datos, La aplicacion debera ser responsiva.
